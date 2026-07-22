@@ -1296,3 +1296,55 @@ select:focus {
 
 
 
+
+/* Role Selector */
+.role-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.25rem;
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 12px;
+}
+
+.role-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.role-btn:hover {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.role-btn.active {
+  background: var(--secondary-color);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(78, 205, 196, 0.3);
+}
+
+.role-btn.active.admin {
+  background: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.icon-wrapper.admin-wrapper {
+  background: rgba(255, 107, 107, 0.1);
+  color: var(--primary-color);
+}
+
+.btn-admin {
+  background: var(--primary-color);
+}
+

@@ -18,7 +18,7 @@ const buildUserResponse = (user) => ({
 
 const registerUser = async (req, res) => {
     try {
-        const { name, email, password, profileImage } = req.body;
+        const { name, email, password, profileImage, role } = req.body;
         const userExists = await User.findOne({ email });
 
         if (userExists) {
@@ -29,6 +29,7 @@ const registerUser = async (req, res) => {
             name,
             email,
             password,
+            role: role || 'customer',
             profileImage: profileImage || '',
         });
 
