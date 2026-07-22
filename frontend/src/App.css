@@ -1131,6 +1131,8 @@ select:focus {
 
 @media (max-width: 768px) {
   .dashboard-layout { flex-direction: column; }
+}
+body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     color: var(--text);

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: EaterEase
+    env: node
+    buildCommand: npm install && cd ../frontend && npm install && npm run build
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false

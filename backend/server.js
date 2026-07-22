@@ -19,10 +19,22 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/tables', require('./routes/tableRoutes'));
 app.use('/api/reservations', require('./routes/reservationRoutes'));
 
-// Root route
-app.get('/', (req, res) => {
-    res.send('Restaurant Reservation API is running');
-});
+const path = require('path');
+
+// Serve frontend in production
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
+    app.get('*', (req, res) =>
+        res.sendFile(
+            path.resolve(__dirname, '../', 'frontend', 'dist', 'index.html')
+        )
+    );
+} else {
+    app.get('/', (req, res) => {
+        res.send('Restaurant Reservation API is running');
+    });
+}
 
 // Error handling middleware
 app.use((err, req, res, next) => {
