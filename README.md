@@ -1,4 +1,4 @@
-# The Cozy Table — Restaurant Reservation Management System
+# EateryEase — Restaurant Reservation Management System
 
 A full-stack, premium restaurant table reservation platform built with **React (Vite)**, **Node.js/Express**, and **MongoDB**. Features real-time table availability validation, double-booking prevention, role-based dashboards, and a conversational AI booking assistant.
 
@@ -162,7 +162,7 @@ This ensures historical reservation records remain completely intact in both cus
 
 ---
 
-## 🤖 Cozy AI Booking Assistant (Standout Feature)
+## 🤖 EateryEase AI Booking Assistant (Standout Feature)
 
 An interactive conversational AI widget is mounted globally for authenticated users.
 

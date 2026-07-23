@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
-          <span className="brand-highlight">The Cozy</span> Table
+          <span className="brand-highlight">Eatery</span>Ease
         </Link>
         <div className="navbar-links">
           <button onClick={() => handleScroll('menu')} className="nav-link-btn">Menu</button>

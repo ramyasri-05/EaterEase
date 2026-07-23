@@ -86,7 +86,7 @@ const Home = () => {
           </div>
           <h1 className="hero-title">Experience Culinary Perfection</h1>
           <p className="hero-description">
-            Welcome to <strong>The Cozy Table</strong>, where modern sophistication meets classic gourmet excellence. Join us for a curated, reservation-only dining experience crafted by our award-winning culinary artisans.
+            Welcome to <strong>EateryEase</strong>, where modern sophistication meets classic gourmet excellence. Join us for a curated, reservation-only dining experience crafted by our award-winning culinary artisans.
           </p>
           <div className="hero-actions">
             <button onClick={handleBookingCTA} className="btn btn-primary">
@@ -146,7 +146,7 @@ const Home = () => {
             <span className="section-tag">Our Legacy</span>
             <h2 className="about-heading">The Art of Fine Seating & Taste</h2>
             <p className="about-p">
-              Established with the goal of creating an intimate dining refuge, <strong>The Cozy Table</strong> provides a meticulously organized atmosphere where guests can celebrate flavor.
+              Established with the goal of creating an intimate dining refuge, <strong>EateryEase</strong> provides a meticulously organized atmosphere where guests can celebrate flavor.
             </p>
             <p className="about-p">
               We operate exclusively through advance reservations, allowing us to source local, day-fresh organic ingredients, reduce waste, and prepare a personalized feast just for you.
@@ -237,7 +237,7 @@ const Home = () => {
               </div>
               <div>
                 <div className="info-label">Email Address</div>
-                <div className="info-value">reservations@cozytable.com</div>
+                <div className="info-value">reservations@eateryease.com</div>
               </div>
             </div>
           </div>
