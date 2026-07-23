@@ -2,7 +2,7 @@
 
 A full-stack, premium restaurant table reservation platform built with **React (Vite)**, **Node.js/Express**, and **MongoDB**. Features real-time table availability validation, double-booking prevention, role-based dashboards, and a conversational AI booking assistant.
 
-- **Live Frontend (Vercel)**: https://eater-ease-ak71tp0wa-nalamramyasri2-5530s-projects.vercel.app
+- **Live Frontend (Vercel)**: eater-ease.vercel.app
 - **Live Backend (Render)**: https://eaterease.onrender.com
 
 ---
