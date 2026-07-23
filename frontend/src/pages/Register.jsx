@@ -7,8 +7,9 @@ const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState('customer'); // 'customer' or 'admin'
+  const [role, setRole] = useState('customer');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const { register, user } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -21,11 +22,15 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError('');
+    setLoading(true);
     try {
       await register(name, email, password, role);
       // Navigation handled by useEffect
     } catch (err) {
-      setError(err.response?.data?.message || 'Failed to register');
+      setError(err.response?.data?.message || err.message || 'Registration failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -91,8 +96,8 @@ const Register = () => {
               minLength="6"
             />
           </div>
-          <button type="submit" className={`btn btn-primary btn-block ${role === 'admin' ? 'btn-admin' : ''}`}>
-            Sign Up as {role === 'admin' ? 'Admin' : 'User'}
+          <button type="submit" disabled={loading} className={`btn btn-primary btn-block ${role === 'admin' ? 'btn-admin' : ''}`}>
+            {loading ? 'Creating Account...' : `Sign Up as ${role === 'admin' ? 'Admin' : 'User'}`}
           </button>
         </form>
         <div className="auth-footer">
