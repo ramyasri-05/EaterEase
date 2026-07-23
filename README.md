@@ -2,8 +2,8 @@
 
 A full-stack, premium restaurant table reservation platform built with **React (Vite)**, **Node.js/Express**, and **MongoDB**. Features real-time table availability validation, double-booking prevention, role-based dashboards, and a conversational AI booking assistant.
 
-- **Live Frontend (Vercel)**: https://restaurant-sand-pi.vercel.app
-- **Live Backend (Render)**: https://restaurant-reservation-management-system-zgr7.onrender.com
+- **Live Frontend (Vercel)**: https://eater-ease-ak71tp0wa-nalamramyasri2-5530s-projects.vercel.app
+- **Live Backend (Render)**: https://eaterease.onrender.com
 
 ---
 
@@ -18,8 +18,8 @@ A full-stack, premium restaurant table reservation platform built with **React (
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Vanamali13/Restaurant.git
-cd Restaurant
+git clone https://github.com/ramyasri-05/EaterEase.git
+cd EaterEase
 
 # 2. Backend setup
 cd backend
